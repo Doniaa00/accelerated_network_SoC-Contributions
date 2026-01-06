@@ -1,72 +1,84 @@
-## 🎯 Baseline CNN Implementation (Collaborator: Donia)
+#  accelerated_network_SoC – Collaborator: Donia
 
-### Overview
-Implemented a minimal CNN achieving **90.47% test accuracy** on 24-class Mars rover instrument classification.
+This repository showcases my **contributions as a collaborator** on the `accelerated_network_SoC` project: a **CNN-based image classification system** for 24 types of Mars rover instruments.  
+The baseline CNN I implemented achieved **90.47% test accuracy** on the dataset.
 
-### Key Contributions:
-1. **Data Analysis**: Explored 24 classes with 64x64 grayscale images
-2. **Model Architecture**: 2 Conv layers + 2 Dense layers (407,832 params)
-3. **Training Pipeline**: Scripted training with validation (91% accuracy)
-4. **Evaluation**: Comprehensive metrics, confusion matrix, per-class analysis
-5. **Documentation**: Clear results and reproducibility
+---
 
-### Files Added:
-- `scripts/train_baseline.py` - Training script
-- `scripts/evaluate_baseline.py` - Evaluation script  
-- `models/baseline/minimal_cnn.h5` - Trained model
-- `results/baseline/` - All evaluation results
-- Updated documentation and configuration
-# Martian Rover Image Classification
+##  My Key Contributions
 
-## Project Overview
-Classification of 24 types of Martian rover images using deep learning.
+1. **Data Analysis & Exploration**  
+   - Explored the dataset of 24 classes (64×64 grayscale images)  
+   - Documented class distribution, sample images, and imbalances  
 
-## 📊 Baseline Results (Minimal CNN)
-- **Test Accuracy**: 90.47%
-- **Model Size**: 1.56 MB
-- **Training Time**: ~15 seconds per epoch
-- **Best Class**: apxs cal target (100%)
-- **Worst Class**: chemcam cal target (33%)
+2. **Model Architecture Design**  
+   - Built a **minimal CNN**: 2 Conv layers + 2 Dense layers  
+   - Total parameters: **407,832**  
+   - Designed for fast training and reproducibility  
 
-## 🏗️ Project Structure
-accelerated_network_SoC/
-├── data/ # Dataset
-│ ├── train/ # Training images (24 classes)
-│ └── test/ # Test images
-├── models/ # Saved models
-│ ├── baseline/ # minimal_cnn.h5 (90.47% accuracy)
-│ ├── optimized/ # Future optimized models
-│ └── transfer_learning/ # Transfer learning models
-├── results/ # Evaluation results
-│ ├── baseline/ # Baseline evaluation
-│ ├── optimized/ # Future optimized results
-│ └── comparisons/ # Model comparisons
-├── scripts/ # Python scripts
-│ ├── train_baseline.py # Train minimal CNN
-│ └── evaluate_baseline.py # Evaluate model
-├── utils/ # Utility functions
-├── notebooks/ # Jupyter notebooks
-├── training/ # Training logs/history
-├── evaluation/ # Evaluation metrics
-├── config.py # Project configuration
-└── requirements.txt # Dependencies
+3. **Training Pipeline**  
+   - Developed `02-Training/train_baseline.py`  
+   - Implemented **training with validation** achieving **91% accuracy**  
+   - Logged training history for analysis  
 
+4. **Evaluation & Metrics**  
+   - Developed `03-Evaluation/evaluate_baseline.py`  
+   - Evaluated model on **test set**  
+   - Generated **confusion matrix, per-class analysis, and summary reports**  
+
+5. **Documentation & Reproducibility**  
+   - Added clear explanations of results, configuration, and scripts  
+   - Ensured others can **reproduce training and evaluation** easily  
+
+---
+
+## 📊 Baseline CNN Performance
+
+| Metric                | Result |
+|-----------------------|--------|
+| Test Accuracy         | 90.47% |
+| Model Size            | 1.56 MB |
+| Training Time/Epoch   | ~15 seconds |
+| Best Class            | apxs cal target (100%) |
+| Worst Class           | chemcam cal target (33%) |
+
+---
+
+##  Project Structure (Your Contributions Highlighted)
+accelerated_network_SoC/ ├── models/ # Saved models │ ├── baseline/ # minimal_cnn.h5 (90.47% accuracy) │ ├── optimized/ # Future optimized models │ └── transfer_learning/ # Transfer learning models ├── results/ # Evaluation results │ ├── baseline/ # Baseline evaluation │ ├── optimized/ # Future optimized results │ └── comparisons/ # Model comparisons ├── scripts/ # Python scripts │ ├── train_baseline.py # Train minimal CNN │ └── evaluate_baseline.py # Evaluate model ├── utils/ # Utility functions ├── notebooks/ # Jupyter notebooks ├── training/ # Training logs/history ├── evaluation/ # Evaluation metrics ├── config.py # Project configuration └── requirements.txt # Dependencies
+
+
+> ⚠️ Full dataset not included due to size; small sample images provided for reference.
+
+---
+
+##  Dependencies
+
+- Python 3.10+  
+- TensorFlow / Keras  
+- NumPy, Matplotlib, Seaborn, PIL  
+- See `requirements.txt` for full list
+
+---
 
 ## 🚀 Quick Start
+
 ```bash
 # 1. Activate virtual environment
-venv\Scripts\activate
+venv\Scripts\activate   # Windows
+source venv/bin/activate  # Linux / Mac
 
 # 2. Install dependencies
 pip install -r requirements.txt
 
 # 3. Train baseline model
-python scripts/train_baseline.py
+python 02-Training/train_baseline.py
 
 # 4. Evaluate baseline model
-python scripts/evaluate_baseline.py
+python 03-Evaluation/evaluate_baseline.py
 
-📈 Dataset Statistics
+📈 Dataset Statistics (Summary)
+
 Total Classes: 24
 
 Image Size: 64×64 grayscale
@@ -77,5 +89,14 @@ Test Images: 1028
 
 Class Distribution: Highly imbalanced (15 to 1878 samples)
 
-🔧 Dependencies
-See requirements.txt for complete list.
+✅ Skills Demonstrated
+
+Python & TensorFlow/Keras
+
+Convolutional Neural Networks (CNNs)
+
+Model training, evaluation, and metrics
+
+Data preprocessing and visualization
+
+Collaborative project workflow
