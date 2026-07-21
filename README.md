@@ -32,7 +32,7 @@ The baseline CNN I implemented achieved **90.47% test accuracy** on the dataset.
 
 ---
 
-## 📊 Baseline CNN Performance
+##  Baseline CNN Performance
 
 | Metric                | Result |
 |-----------------------|--------|
@@ -48,7 +48,7 @@ The baseline CNN I implemented achieved **90.47% test accuracy** on the dataset.
 accelerated_network_SoC/ ├── models/ # Saved models │ ├── baseline/ # minimal_cnn.h5 (90.47% accuracy) │ ├── optimized/ # Future optimized models │ └── transfer_learning/ # Transfer learning models ├── results/ # Evaluation results │ ├── baseline/ # Baseline evaluation │ ├── optimized/ # Future optimized results │ └── comparisons/ # Model comparisons ├── scripts/ # Python scripts │ ├── train_baseline.py # Train minimal CNN │ └── evaluate_baseline.py # Evaluate model ├── utils/ # Utility functions ├── notebooks/ # Jupyter notebooks ├── training/ # Training logs/history ├── evaluation/ # Evaluation metrics ├── config.py # Project configuration └── requirements.txt # Dependencies
 
 
-> ⚠️ Full dataset not included due to size; small sample images provided for reference.
+>  Full dataset not included due to size; small sample images provided for reference.
 
 ---
 
@@ -61,7 +61,7 @@ accelerated_network_SoC/ ├── models/ # Saved models │ ├── baseline
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # 1. Activate virtual environment
@@ -77,7 +77,7 @@ python 02-Training/train_baseline.py
 # 4. Evaluate baseline model
 python 03-Evaluation/evaluate_baseline.py
 
-📈 Dataset Statistics (Summary)
+ Dataset Statistics (Summary)
 
 Total Classes: 24
 
@@ -89,7 +89,7 @@ Test Images: 1028
 
 Class Distribution: Highly imbalanced (15 to 1878 samples)
 
-✅ Skills Demonstrated
+ Skills Demonstrated
 
 Python & TensorFlow/Keras
 
